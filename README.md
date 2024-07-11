@@ -91,5 +91,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - **Name:** Sweta Singh
 - **Email:** singh.sweta07082009@gmail.com
-- **GitHub:** [kunal654](https://github.com/sweta-0708)
+- **GitHub:** [sweta-0708](https://github.com/sweta-0708)
 
