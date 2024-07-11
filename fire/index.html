@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Detection App</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        /* CSS */
+        body {
+            background-image: url('static/img_fire.jpg'); /* Add your image path here */
+            background-size: cover; /* Cover the entire body with the background image */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            /* Optionally, you can add other styles such as font-family, color, etc. */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fire Detection App</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Results</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="upload">
+                <h2>Upload Existing Image or Video</h2>
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <input type="file" name="file" id="fileInput">
+                    <button type="submit" class="btn">Upload</button>
+                </form>
+            </section>
+
+            <section id="capture">
+                <h2>Capture Live Images or Video</h2>
+                <div id="cameraContainer" class="flex-container">
+                    <div id="videoContainer" class="flex-item">
+                        <video id="video" autoplay></video>
+                    </div>
+                    <div id="capturedImageContainer" class="flex-item">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+                <div id="controls">
+                    <button id="captureButton" class="btn">Capture Image</button>
+                    <button id="recordButton" class="btn">Record Video</button>
+                    <button id="stopButton" class="btn" style="display: none;">Stop Recording</button>
+                    <a id="downloadButton" class="btn" style="display: none;">Download Recording</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fire Detection App</p>
+        </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
